@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Canvas</title>
+</head>
+<body>
+	<div class="wrapper" style="text-align: center;">
+		<canvas id="result"></canvas>
+	</div>
+	<script src="script.js"></script>
+	<script>
+		Canvas.init({
+			id: 'result',
+			width: 680,
+			height: 680,
+			fillColor: 'orange',
+			hoverColor: 'DarkOrange',
+			lineColor: 'white',
+			// lineColor: 'red',
+			textColor: 'grey',
+			mainImage: 'mainimage.webp',
+			fontSize: 24,
+			lineWidth: 4,
+			startAngle: -Math.PI / 2,
+			items: [
+				{
+					name: 'Шоссейный',
+					image: 'shosse.jpg',
+					description: 'Это самый популярный вид в велосипедном спорте и та основа, с которой велоспорт вообще начинался.',
+				},
+				{
+					name: 'Трековый',
+					image: 'treck.jpg',
+					description: 'Дерево вместо асфальта, движение по кругу вместо прямой – вот первое, на что обратит внимание человек, незнакомый с велосипедным спортом.',
+				},
+				{
+					name: 'Кросс-кантри',
+					image: 'krosskantry.jpg',
+					description: 'Кросс-кантри XC – наиболее популярное направление в горном велоспорте и, если так можно сказать, самое безопасное.',
+				},
+				{
+					name: 'Даунхилл',
+					image: 'downhill.jpg',
+					description: 'Даунхилл – скоростной спуск по максимально сложному рельефу с естественными и искусственными препятствиями.',
+				},
+				{
+					name: 'Апхилл',
+					image: 'apphill.jpg',
+					description: 'Апхилл – дисциплина, противоположная даунхиллу. Задача гонщиков состоит в том, чтобы показать лучший результат на скоростном подъёме.',
+				},
+				{
+					name: 'BMX',
+					image: 'bmx.jpg',
+					description: 'Велосипед BMX (расшифровывается как Bicycle Motocross, а переводится как велосипедный мотокросс) не спутать ни с каким другим.',
+				},
+				{
+					name: 'Циклокросс',
+					image: 'Velokross.jpg',
+					description: 'В велокроссе (или, по-другому, в циклокроссе) используется похожий на шоссейник велосипед, но с отличием в широкой и зубастой резине, как того требует трасса по пересечённой местности с включением грязевых участков.',
+				},
+				{
+					name: 'Фрирайд',
+					image: 'freeride.jpg',
+					description: 'Фрирайд – технически похож на даунхилл, но здесь главная цель не максимально быстрое время, а экстрим и связанная с ним зрелищность.',
+				},
+			],
+		});
+	</script>
+</body>
+</html>
